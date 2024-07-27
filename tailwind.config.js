@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./src/**/*.{html,js}", 
+  content: [ 
     "./components/**/*.{js,vue,ts}",
     "./layouts/**/*.vue",
     "./pages/**/*.vue",
@@ -15,6 +15,9 @@ export default {
         ],
         fontdidot:[
           'GFS Didot'
+        ],
+        fontlogo:[
+          'Neuton'
         ]
       }
     },
