@@ -19,6 +19,10 @@ export default {
         fontlogo:[
           'Neuton'
         ]
+      },
+      animation:{
+        bounce:'bounce 1s ease-in-out 1'
+
       }
     },
   },
