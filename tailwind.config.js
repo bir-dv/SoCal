@@ -18,6 +18,12 @@ export default {
         ],
         fontlogo:[
           'Neuton'
+        ],
+        racing:[
+          'Racing'
+        ],
+        ethnocentric:[
+          'ethnocentric_rg'
         ]
       },
       animation:{
