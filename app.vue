@@ -34,7 +34,7 @@
         our
       </h1>
       <h1 class="text-2xl font-['ethnocentric_rg']  text-gray-800 uppercase lg:text-6xl dark:text-white">pristine
-        exotics
+        classics
       </h1>
 
       <!-- /////////// -->
@@ -43,8 +43,8 @@
       <div class="container px-6 py-18 mx-auto">
 
         <div class="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-8 md:grid-cols-2 xl:grid-cols-3">
-          <div @click="toggleModal" class="block overflow-hidden bg-cover rounded-lg cursor-pointer h-96 group"
-            style="background-image:url('https://images.pexels.com/photos/13387265/pexels-photo-13387265.jpeg?auto=compress&cs=tinysrgb&w=400')">
+          <div @click="toggleModal"
+            class="bg-[url('/assets/imgs/image1.jpg')] bg-center block overflow-hidden bg-cover rounded-lg cursor-pointer h-96 group">
             <div
               class="flex flex-col justify-center w-full h-full px-8 pt-60 transition-opacity duration-700 opacity-0 backdrop-blur-sm bg-gray-800/60 group-hover:opacity-100 ">
               <h2 class="mt-4 text-xl font-semibold text-white uppercase">Rolls-royce</h2>
@@ -54,12 +54,13 @@
                 <p class="text-2xl px-2  italic font-extralight text-[#fb8500] ">View Car</p>
               </div>
             </div>
-
-
           </div>
 
-          <div @click="toggleModal" class="block overflow-hidden bg-cover rounded-lg cursor-pointer h-96 group"
-            style="background-image:url('https://images.pexels.com/photos/2613276/pexels-photo-2613276.jpeg?auto=compress&cs=tinysrgb&w=400')">
+
+          <!-- ///////////////// -->
+
+          <div @click="toggleModal1"
+            class="bg-[url('/assets/imgs/image2.jpg')] bg-center block overflow-hidden bg-cover rounded-lg cursor-pointer h-96 group">
             <div
               class="flex flex-col justify-center w-full h-full px-8 pt-60 transition-opacity duration-700 opacity-0 backdrop-blur-sm bg-gray-800/60 group-hover:opacity-100 ">
               <h2 class="mt-4 text-xl font-semibold text-white uppercase">mercedes-benz</h2>
@@ -71,8 +72,8 @@
             </div>
           </div>
 
-          <div @click="toggleModal" class="block overflow-hidden bg-cover rounded-lg cursor-pointer h-96 group"
-            style="background-image:url('https://images.pexels.com/photos/9322199/pexels-photo-9322199.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')">
+          <div @click="toggleModal"
+            class="bg-[url('/assets/imgs/image3.jpg')] bg-center block overflow-hidden bg-cover rounded-lg cursor-pointer h-96 group">
             <div
               class="flex flex-col justify-center w-full h-full px-8 pt-60 transition-opacity duration-700 opacity-0 backdrop-blur-sm bg-gray-800/60 group-hover:opacity-100 ">
               <h2 class="mt-4 text-xl font-semibold text-white  uppercase">Lamborghini</h2>
@@ -87,11 +88,11 @@
       </div>
 
 
-      <div class="-mt-10 container px-6 mx-auto">
+      <div class=" container px-6 mx-auto">
 
         <div class="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-8 md:grid-cols-2 xl:grid-cols-3">
-          <div @click="toggleModal" class="block overflow-hidden bg-cover rounded-lg cursor-pointer h-96 group"
-            style="background-image:url('https://images.pexels.com/photos/2568539/pexels-photo-2568539.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')">
+          <div @click="toggleModal"
+            class="bg-[url('/assets/imgs/image4.jpg')] bg-center block overflow-hidden bg-cover rounded-lg cursor-pointer h-96 group">
             <div
               class="flex flex-col justify-center w-full h-full px-8 pt-60 transition-opacity duration-700 opacity-0 backdrop-blur-sm bg-gray-800/60 group-hover:opacity-100 ">
               <h2 class="mt-4 text-xl font-semibold text-white uppercase">ferrari</h2>
@@ -103,8 +104,8 @@
             </div>
           </div>
 
-          <div @click="toggleModal" class="block overflow-hidden bg-cover rounded-lg cursor-pointer h-96 group"
-            style="background-image:url('https://images.pexels.com/photos/19189161/pexels-photo-19189161/free-photo-of-close-up-of-bentley-logo-with-raindrops-on-the-car.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')">
+          <div @click="toggleModal"
+            class="bg-[url('/assets/imgs/image5.jpg')] bg-center block overflow-hidden bg-cover rounded-lg cursor-pointer h-96 group">
             <div
               class="flex flex-col justify-center w-full h-full px-8 pt-60 transition-opacity duration-700 opacity-0 backdrop-blur-sm bg-gray-800/60 group-hover:opacity-100 ">
               <h2 class="mt-4 text-xl font-semibold text-white uppercase">bentley</h2>
@@ -116,8 +117,8 @@
             </div>
           </div>
 
-          <div @click="toggleModal" class="block overflow-hidden bg-cover rounded-lg cursor-pointer h-96 group"
-            style="background-image:url('https://images.pexels.com/photos/9452143/pexels-photo-9452143.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')">
+          <div @click="toggleModal"
+            class="bg-[url('/assets/imgs/image6.jpg')] bg-center block overflow-hidden bg-cover rounded-lg cursor-pointer h-96 group">
             <div
               class="flex flex-col justify-center w-full h-full px-8 pt-60 transition-opacity duration-700 opacity-0 backdrop-blur-sm bg-gray-800/60 group-hover:opacity-100 ">
               <h2 class="mt-4 text-xl font-semibold text-white uppercase">mclaren</h2>
@@ -132,9 +133,13 @@
       </div>
 
     </div>
-    <dialguemodal :modal-active="modalActive" @close-model="toggleModal">
+    <!-- <dialguemodal :modal-active="modalActive" @close-model="toggleModal">
 
-    </dialguemodal>
+    </dialguemodal> -->
+
+    <gallerydialoguemodal :modal-active="modalActive" @close-model="toggleModal"></gallerydialoguemodal>
+    <gallerydialoguemodal1 :modal-active="modalActive1" @close-model="toggleModal1"></gallerydialoguemodal1>
+
   </section>
 
 
@@ -151,10 +156,18 @@
 import { ref } from 'vue';
 
 import dialguemodal from './components/dialguemodal.vue';
+import gallerydialoguemodal from './components/gallerydialoguemodal.vue';
+import gallerydialoguemodal1 from './components/gallerydialoguemodal1.vue';
 
 const modalActive = ref();
 const toggleModal = () => {
   modalActive.value = !modalActive.value;
+}
+
+
+const modalActive1 = ref();
+const toggleModal1 = () => {
+  modalActive1.value = !modalActive1.value;
 }
 
 
