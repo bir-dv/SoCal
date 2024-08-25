@@ -6,7 +6,11 @@ export default {
     "./pages/**/*.vue",
     "./plugins/**/*.{js,ts}",
     "./app.vue",
-    "./error.vue",],
+    "./error.vue",
+    "./node_modules/flowbite/**/*.{js,ts}",
+    "./nuxt.config.{js,ts}",
+  ],
+  darkMode: 'class',
   theme: {
     extend: {
       fontFamily: {
@@ -32,7 +36,9 @@ export default {
       }
     },
   },
-  plugins: [],
+  plugins: [
+    require('flowbite/plugin')
+  ],
 
  
 

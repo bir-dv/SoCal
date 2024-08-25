@@ -1,5 +1,5 @@
 <template>
-    <section class="bg-white dark:bg-gray-900">
+    <section id="whyus" class="bg-white dark:bg-gray-900">
         <div class="relative flex">
             <div class="min-h-screen lg:w-1/3"></div>
             <div class="hidden w-3/4 min-h-screen bg-gray-100 dark:bg-gray-800 lg:block"></div>

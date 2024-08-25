@@ -11,5 +11,8 @@ export default defineNuxtConfig({
     },
   },
 
-  modules: ["@nuxt/fonts"]
+  modules: ["@nuxt/fonts", "vue3-carousel-nuxt", "@nuxt/ui"],
+  carousel: {
+    prefix: 'MyPrefix'
+  }
 })

@@ -43,7 +43,7 @@
       <div class="container px-6 py-18 mx-auto">
 
         <div class="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-8 md:grid-cols-2 xl:grid-cols-3">
-          <div @click="toggleModal"
+          <div @click="togglerollsroyce"
             class="bg-[url('/assets/imgs/image1.jpg')] bg-center block overflow-hidden bg-cover rounded-lg cursor-pointer h-96 group">
             <div
               class="flex flex-col justify-center w-full h-full px-8 pt-60 transition-opacity duration-700 opacity-0 backdrop-blur-sm bg-gray-800/60 group-hover:opacity-100 ">
@@ -59,7 +59,7 @@
 
           <!-- ///////////////// -->
 
-          <div @click="toggleModal1"
+          <div @click="togglemercedesActive"
             class="bg-[url('/assets/imgs/image2.jpg')] bg-center block overflow-hidden bg-cover rounded-lg cursor-pointer h-96 group">
             <div
               class="flex flex-col justify-center w-full h-full px-8 pt-60 transition-opacity duration-700 opacity-0 backdrop-blur-sm bg-gray-800/60 group-hover:opacity-100 ">
@@ -72,7 +72,7 @@
             </div>
           </div>
 
-          <div @click="toggleModal"
+          <div @click="togglelamborghiniActive"
             class="bg-[url('/assets/imgs/image3.jpg')] bg-center block overflow-hidden bg-cover rounded-lg cursor-pointer h-96 group">
             <div
               class="flex flex-col justify-center w-full h-full px-8 pt-60 transition-opacity duration-700 opacity-0 backdrop-blur-sm bg-gray-800/60 group-hover:opacity-100 ">
@@ -91,7 +91,7 @@
       <div class=" container px-6 mx-auto">
 
         <div class="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-8 md:grid-cols-2 xl:grid-cols-3">
-          <div @click="toggleModal"
+          <div @click="toggleferrariActive"
             class="bg-[url('/assets/imgs/image4.jpg')] bg-center block overflow-hidden bg-cover rounded-lg cursor-pointer h-96 group">
             <div
               class="flex flex-col justify-center w-full h-full px-8 pt-60 transition-opacity duration-700 opacity-0 backdrop-blur-sm bg-gray-800/60 group-hover:opacity-100 ">
@@ -104,7 +104,7 @@
             </div>
           </div>
 
-          <div @click="toggleModal"
+          <div @click="togglebentleyActive"
             class="bg-[url('/assets/imgs/image5.jpg')] bg-center block overflow-hidden bg-cover rounded-lg cursor-pointer h-96 group">
             <div
               class="flex flex-col justify-center w-full h-full px-8 pt-60 transition-opacity duration-700 opacity-0 backdrop-blur-sm bg-gray-800/60 group-hover:opacity-100 ">
@@ -117,7 +117,7 @@
             </div>
           </div>
 
-          <div @click="toggleModal"
+          <div @click="togglemclarenActive"
             class="bg-[url('/assets/imgs/image6.jpg')] bg-center block overflow-hidden bg-cover rounded-lg cursor-pointer h-96 group">
             <div
               class="flex flex-col justify-center w-full h-full px-8 pt-60 transition-opacity duration-700 opacity-0 backdrop-blur-sm bg-gray-800/60 group-hover:opacity-100 ">
@@ -139,6 +139,13 @@
 
     <gallerydialoguemodal :modal-active="modalActive" @close-model="toggleModal"></gallerydialoguemodal>
     <gallerydialoguemodal1 :modal-active="modalActive1" @close-model="toggleModal1"></gallerydialoguemodal1>
+    <rollsroycemodal :modal-active="rollsroyceActive" @close-model="togglerollsroyce"></rollsroycemodal>
+    <mercedesemodal :modal-active="mercedesActive" @close-model="togglemercedesActive"></mercedesemodal>
+    <lamborghinimodal :modal-active="lamborghiniActive" @close-model="togglelamborghiniActive"></lamborghinimodal>
+    <ferrarimodel :modal-active="ferrariActive" @close-model="toggleferrariActive"></ferrarimodel>
+    <bentleymodel :modal-active="bentleyActive" @close-model="togglebentleyActive"></bentleymodel>
+    <mclarenmodal :modal-active="mclarenActive" @close-model="togglemclarenActive"></mclarenmodal>
+
 
   </section>
 
@@ -158,6 +165,12 @@ import { ref } from 'vue';
 import dialguemodal from './components/dialguemodal.vue';
 import gallerydialoguemodal from './components/gallerydialoguemodal.vue';
 import gallerydialoguemodal1 from './components/gallerydialoguemodal1.vue';
+import rollsroycemodal from './components/rollsroycemodal.vue';
+import mercedesemodal from './components/mercedesemodal.vue';
+import lamborghinimodal from './components/lamborghinimodal.vue';
+import ferrarimodel from './components/ferrarimodel.vue';
+import bentleymodel from './components/bentleymodel.vue';
+import mclarenmodal from './components/mclarenmodal.vue';
 
 const modalActive = ref();
 const toggleModal = () => {
@@ -170,6 +183,35 @@ const toggleModal1 = () => {
   modalActive1.value = !modalActive1.value;
 }
 
+const rollsroyceActive = ref();
+const togglerollsroyce = () => {
+  rollsroyceActive.value = !rollsroyceActive.value;
+}
+
+const mercedesActive = ref()
+const togglemercedesActive = () => {
+  mercedesActive.value = !mercedesActive.value
+}
+
+const lamborghiniActive = ref();
+const togglelamborghiniActive = () => {
+  lamborghiniActive.value = !lamborghiniActive.value;
+}
+
+const ferrariActive = ref();
+const toggleferrariActive = () => {
+  ferrariActive.value = !ferrariActive.value;
+}
+
+const bentleyActive = ref();
+const togglebentleyActive = () => {
+  bentleyActive.value = !bentleyActive.value;
+}
+
+const mclarenActive = ref();
+const togglemclarenActive = () => {
+  mclarenActive.value = !mclarenActive.value;
+}
 
 </script>
 
